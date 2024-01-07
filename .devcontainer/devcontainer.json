@@ -16,5 +16,5 @@
       ]
     }
   },
-  "postCreateCommand": "pip3 install --user -r requirements.txt; echo '✅ Packages installed and Requirements met'",
+  "postCreateCommand": "pip3 install --user -r requirements.txt; echo '✅ Packages installed and Requirements met'"
 }
