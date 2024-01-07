@@ -77,7 +77,7 @@ def write_summary(summary):
     summary (str): The generated summary.
 
   """
-  with open('output/summary.txt', 'w') as f:
+  with open('feedback-2-action/output/summary.txt', 'w') as f:
     f.write(summary)
     f.close()
 
@@ -86,7 +86,7 @@ def main():
   """
   This is the main function that is invoked when the program is called.
   """
-  input_file = 'input/feedbacks.csv'
+  input_file = 'feedback-2-action/input/feedbacks.csv'
   print(f"Reading feedbacks from {input_file}...")
   feedbacks = get_formatted_feedbacks(input_file)
 
@@ -94,7 +94,7 @@ def main():
   summary = generate_executive_summary(feedbacks)
   print('Summary Generated.')
 
-  print("Writing summary to output/summary.txt...")
+  print("Writing summary to feedback-2-action/output/summary.txt...")
   write_summary(summary)
 
   print("Done.")
