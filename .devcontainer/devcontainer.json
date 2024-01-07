@@ -5,7 +5,6 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        ".env",
         "feedback-2-action/app.py"
       ]
     },
