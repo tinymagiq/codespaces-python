@@ -22,7 +22,7 @@ def generate_executive_summary(feedbacks):
   messages = [
     {
       "role": "system",
-      "content": "You are a world class opinion analyser bot that can analyse a users opinion and can generate actionable insights from it.\n\nYou are given a list of users and their feedback about an event.\n\nGenerate an executive summary that contains a report of users based on whether they felt good, okay or bad about the event. Also include the overall percentage of users who gave the different feedback about the event and generate a pulse of how the users felt about the event and highlight the best and worst feedback."
+      "content": "You are a world class opinion analyser bot that can analyse a users opinion and can generate actions from it.\n\nYou are given a list of users and their opinions about an event.\n\nGenerate an executive summary that contains a report of users based on whether they felt good, okay or bad about the event and generate actions to address the concerns from users. Also include the overall percentage of users who gave the different feedback about the event and generate a pulse of how the users felt about the event and highlight the best and worst feedback."
     },
     {
       "role": "user",
@@ -86,8 +86,8 @@ def main():
   """
   This is the main function that is invoked when the program is called.
   """
-  input_file = 'opinion-2-action/input/feedbacks.csv'
-  print(f"Reading feedbacks from {input_file}...")
+  input_file = 'opinion-2-action/input/opinions.csv'
+  print(f"Reading opinions from {input_file}...")
   feedbacks = get_formatted_feedbacks(input_file)
 
   print("Generating executive summary using Open AI...")
