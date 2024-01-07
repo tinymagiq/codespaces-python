@@ -5,7 +5,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "feedback-2-action/app.py"
+        "opinion-2-action/app.py"
       ]
     },
     "vscode": {
@@ -14,7 +14,8 @@
       },
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance"
+        "ms-python.vscode-pylance",
+        "mechatroner.rainbow-csv"
       ]
     }
   },
